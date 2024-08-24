@@ -6,10 +6,19 @@
 *.obj
 *.ilk
 
-# Ignore Linux executables (without extension)
-# Matches files without an extension
-*.[^./]*
+# Ignore Linux executables by name (without extension)
+# Ignore all executable files directly in this directory
+15.CharacterManipulationAndStrings/15.3CStringManipulation/*
+
+# Allow .cpp files to be tracked even if the directory is ignored
+!15.CharacterManipulationAndStrings/15.3CStringManipulation/*.cpp
+
 # Ignore specific known executables
 test
-# Ignore all executables generated from .cpp files
 *.out
+
+# Optionally, ignore other common build artifacts or temporary files
+*.o
+*~
+*.swp
+.DS_Store

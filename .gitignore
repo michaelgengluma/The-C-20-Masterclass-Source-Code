@@ -5,3 +5,11 @@
 *.pdb
 *.obj
 *.ilk
+
+# Ignore Linux executables (without extension)
+# Matches files without an extension
+*.[^./]*
+# Ignore specific known executables
+test
+# Ignore all executables generated from .cpp files
+*.out
